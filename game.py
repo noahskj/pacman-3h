@@ -16,6 +16,12 @@ pg.display.set_caption("Pac-Man (clone)")
 
 font_press_enter = pg.font.Font(None, 32)
 
+#musicussy
+pg.mixer.pre_init(44100, 32, 2, 1024)
+pg.mixer.init()
+pg.mixer.music.load("faith.wav")
+pg.mixer.music.play(loops = 1)
+
 ## Game loop ##
 state = "LOAD"
 running = True
