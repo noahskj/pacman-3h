@@ -19,7 +19,8 @@ font_press_enter = pg.font.Font(None, 32)
 #musicussy
 pg.mixer.pre_init(44100, 32, 2, 1024)
 pg.mixer.init()
-pg.mixer.music.load("faith.wav")
+pg.mixer.music.load("cum.wav")
+pg.mixer.music.set_volume(0.2)
 pg.mixer.music.play(loops = 1)
 
 ## Game loop ##
